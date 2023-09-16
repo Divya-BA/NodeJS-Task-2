@@ -97,7 +97,7 @@ app.post('/bookRoom', (req, res) => {
                 ...req.body
             })
             console.log(bookedRooms);
-            res.json("Room booked!")
+           res.status(201).send(`Room Booked`)
         }
 
     } catch (err) {
